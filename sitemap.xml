@@ -72,6 +72,11 @@
     </url>
 
     <url>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/jamhocken/generatedDays.html</loc>
+    	<lastmod>2022-01-04</lastmod>
+    </url>
+
+    <url>
     	<loc>https://aoc-2021.netlify.com/generated/coder/mogron/generatedDays.html</loc>
     	<lastmod>2022-01-04</lastmod>
     </url>
@@ -88,11 +93,6 @@
 
     <url>
     	<loc>https://aoc-2021.netlify.com/generated/coder/dfriedenberger/generatedDays.html</loc>
-    	<lastmod>2022-01-04</lastmod>
-    </url>
-
-    <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/jamhocken/generatedDays.html</loc>
     	<lastmod>2022-01-04</lastmod>
     </url>
 
