@@ -2807,15 +2807,15 @@ main()</code></pre>
 <div class="sect2">
 <h3 id="_day_19_python"><a class="anchor" href="#_day_19_python"></a><a class="link" href="#_day_19_python">Day 19: python</a></h3>
 <div class="paragraph">
-<p>Day 18 of year 2021
-<a href="https://adventofcode.com/2021/day/18" class="bare">https://adventofcode.com/2021/day/18</a></p>
+<p>Day 19 of year 2021
+<a href="https://adventofcode.com/2021/day/19" class="bare">https://adventofcode.com/2021/day/19</a></p>
 </div>
 <div class="sect3">
 <h4 id="_what_i_learned_19"><a class="anchor" href="#_what_i_learned_19"></a><a class="link" href="#_what_i_learned_19">What I learned</a></h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Working with match objects from regex</p>
+<p>I am not fond of puzzles with multiple geometric transformations.</p>
 </li>
 </ol>
 </div>
@@ -2825,38 +2825,42 @@ main()</code></pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>I just read in the lines and strip them and put them into a list.</p>
+<p>I use regex to fish out the integers and create a scanners dictionary with the scanner as the key and a list of beacons as value.</p>
+</li>
+<li>
+<p>I then calculate a vector of the distances between pairs of beacons of each scanner.</p>
 </li>
 <li>
 <p>Star 1</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>After some thought, I didn&#8217;t have any better idea than to leave everything as a string and parse it.</p>
+<p>I make a set containing scanner 0. And another set with all of the other scanners.</p>
 </li>
 <li>
-<p>I setup a loop that stops if neither condition is met.</p>
+<p>I loop through until the second set is empty.</p>
 </li>
 <li>
-<p>For explode
-&#8230;&#8203;I regex to find the pairs that could explode. And then count up the [ to the left (subtracting closers if any).</p>
+<p>For each member of the second set, I check it against scanners that are already mapped.</p>
+</li>
+<li>
+<p>To find possible overlapping beacons between scanners, I use the distance vectors. If 12 beacons of one scanner have the same relative vectors as the another scanners, these are probably common beacons.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>If more than 4, then it explodes. I scan through to see if there are any numbers to the left or right and do the addition and substition.</p>
+<p>In that case, I first sort out the x, y and z coordinates to match the order of the already mapped scanner.</p>
+</li>
+<li>
+<p>Then, I see if the axis has been inverted (e.g. -x) and correct that.</p>
+</li>
+<li>
+<p>Then, I figure out the distance between the 2 scanners and shift the second scanner.</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>For split</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>It&#8217;s actually easy. I just check for any double digits and do the substition.</p>
-</li>
-</ol>
-</div>
+<p>In the end, I take the now shifted lists of beacons, put them into a set to eliminate duplicates and check how many items the set has.</p>
 </li>
 </ol>
 </div>
@@ -2866,10 +2870,22 @@ main()</code></pre>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>I use the same code as before and just run 2 nested loops and keep the max magnitude while running through.</p>
+<p>You reuse everythin from Star 1.</p>
+</li>
+<li>
+<p>And you just have to keep track of those distances between the scanners on the way.</p>
+</li>
+<li>
+<p>And you calculate the distance between all scanners and take the max.</p>
 </li>
 </ol>
 </div>
+</li>
+<li>
+<p>I am pretty sure that this can be done much or elegantly. But, I have trouble with geometry sometimes and was able to work it out best with "divide and conquer".</p>
+</li>
+<li>
+<p>The data structures were also kind of messy and suboptimal, but after I got it working, I didn&#8217;t want to mess with them.</p>
 </li>
 </ol>
 </div>
