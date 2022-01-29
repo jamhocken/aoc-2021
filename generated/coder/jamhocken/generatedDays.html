@@ -3934,60 +3934,27 @@ main()</code></pre>
 <div class="sect2">
 <h3 id="_day_25_python"><a class="anchor" href="#_day_25_python"></a><a class="link" href="#_day_25_python">Day 25: python</a></h3>
 <div class="paragraph">
-<p>Day 3 of year 2021
-<a href="https://adventofcode.com/2021/day/3" class="bare">https://adventofcode.com/2021/day/3</a></p>
+<p>Day 25 of year 2021
+<a href="https://adventofcode.com/2021/day/25" class="bare">https://adventofcode.com/2021/day/25</a></p>
 </div>
 <div class="sect3">
 <h4 id="_what_i_learned_25"><a class="anchor" href="#_what_i_learned_25"></a><a class="link" href="#_what_i_learned_25">What I learned</a></h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Somehow I don&#8217;t understand slices with lists in Python, but at least I do understand it for matrices with Numpy.</p>
-</li>
-<li>
-<p>The whole thing isn&#8217;t very elegant, I&#8217;m afraid.</p>
+<p>Deepcopy on lists of lists. (Although I already knew this theoretically)</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_approach_25"><a class="anchor" href="#_approach_25"></a><a class="link" href="#_approach_25">Approach</a></h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>I parse the file and put all of the codes into a list of lists.</p>
-</li>
-<li>
-<p>For star 1</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>I take that list of lists and turned it into a Numpy matrix. I then sum each digit over all
-codes and compare that sum to half of the number of codes to find the majority digit for Gamma.</p>
-</li>
-<li>
-<p>I then used some modula arithmetic to find the inverse Epsilon.</p>
-</li>
-<li>
-<p>Converted to strings, joined it and converted to integers.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>For star 2</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>I go through each digit and cull out the codes that don&#8217;t belong to the majority / minority.</p>
-</li>
-<li>
-<p>I recalculate the majority / minority evey run through the loop with a Numpy matrix again.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
+<div class="paragraph">
+<p>It&#8217;s actually straightforward. I put the input into a list of lists.
+I iterate over the lists of lists and check for "&gt;"'s  and move them to the right if possible and wrap if necessary.
+I do the same then for the "v"'s.
+I set a flag if anything moves in a round. And leave the while loop as soon as nothing has moved in the round.
+I count the rounds on the way. That&#8217;s it.</p>
 </div>
 </div>
 <div class="sect3">
