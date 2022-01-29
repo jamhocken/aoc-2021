@@ -47,17 +47,12 @@
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/rdmueller/generatedDays.html</loc>
-    	<lastmod>2022-01-29</lastmod>
-    </url>
-
-    <url>
     	<loc>https://aoc-2021.netlify.com/generated/coder/razziel89/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/quajak/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/rdmueller/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
@@ -67,12 +62,12 @@
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/mr-kaffee/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/quajak/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/jamhocken/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/mr-kaffee/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
@@ -87,7 +82,7 @@
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/docToolchain/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/jamhocken/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
@@ -97,12 +92,17 @@
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/dfriedenberger/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/aspik79/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
     <url>
-    	<loc>https://aoc-2021.netlify.com/generated/coder/aspik79/generatedDays.html</loc>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/docToolchain/generatedDays.html</loc>
+    	<lastmod>2022-01-29</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://aoc-2021.netlify.com/generated/coder/dfriedenberger/generatedDays.html</loc>
     	<lastmod>2022-01-29</lastmod>
     </url>
 
